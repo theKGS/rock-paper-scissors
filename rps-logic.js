@@ -21,6 +21,11 @@ function getHumanChoice() {
     return r.toLowerCase();
 }
 
+/*
+  Not necessarily an obvious implementation. I wanted to avoid lots
+  of conditionals, so I opted to make the computer's choice of move
+  an offset relative to the players choice, which is "fixed" as rock.
+*/
 function playGame(){
     let humanScore = 0;
     let computerScore = 0;
